@@ -138,48 +138,94 @@
     </header>
     <!--End Main Header -->
 
-	<!-- Banner Section -->
+    <!-- Banner Section -->
     <div class="banner-section">
-		<div class="main-slider-carousel owl-carousel owl-theme">
+        <div class="main-slider-carousel owl-carousel owl-theme">
+            <div class="slide" data-bg-image="images/main-slider/intro-1.jpg">
+                <!-- Image Overlay -->
+                <div class="image-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.83); z-index: 1;"></div>
 
-			<div class="slide" data-bg-image="images/main-slider/intro-1.jpg">
-				<div class="auto-container w-100">
-					<div class="row clearfix">
-
-						<!-- Content Column -->
-            <div class="content-column col-lg-7 col-md-12 col-sm-12">
-                <div class="inner-column">
-                    <div class="title" style="font-size: 24px; margin-bottom: 10px;">Your Offshore Capital Partner</div>
-                    <div class="h1-wrapper" style="margin-bottom: 20px;">
-                        <h1 style="margin-bottom: 10px;">Get the <span>Capital</span> Your<br>Business Needs!</h1>
-                    </div>
-                    <div class="text" style="margin-bottom: 40px;">
-                        <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;">Discover Innovative Solutions for Debt and Equity</span>
-                        <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;">Capital Raises from $10 Million to $600 Million </span>
-                        <span style="display: block; font-size: 20px; color: #606060;">- Already Raised $8.1 Billion+ and Still Growing!</span>
-                    </div>
-                    <div class="btn-box">
-                        <a href="#contactus" class="theme-btn btn-style-one"><span class="txt">Get Funded Now</span></a>
+                <div class="auto-container w-100">
+                    <div class="row clearfix">
+                        <!-- Content Column -->
+                        <div class="content-column col-lg-7 col-md-12 col-sm-12 dark-text" style="position: relative; z-index: 2;">
+                            <div class="inner-column">
+                                <div class="title" style="font-size: 24px; margin-bottom: 10px;">Your Offshore Capital Partner</div>
+                                <div class="h1-wrapper" style="margin-bottom: 20px;">
+                                    <h1 style="margin-bottom: 10px;">
+                                        Get the <span class="capital">Capital</span> Your<br>Business Needs!
+                                    </h1>
+                                </div>
+                                <div class="text" style="margin-bottom: 40px;">
+                                    <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;" class="light-text not-capital">Innovative Solutions for Debt & Equity</span>
+                                    <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;" class="light-text not-capital">Capital Raises: $10M to $600M</span>
+                                    <span style="display: block; font-size: 20px; color: #606060;" class="light-text not-capital">Raised $8.1B+ & Still Growing!</span>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="#contactus" class="theme-btn btn-style-one"><span class="txt">Get Funded Now</span></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- End Banner Section -->
+
+    <!-- Inline CSS -->
+    <style>
+    /* Style for mobile screens (max-width: 767px) */
+@media (max-width: 767px) {
+/* Apply black background with low opacity to the overlay */
+.banner-section .slide .image-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 1;
+}
+
+/* Change the text color to white when overlay is activated */
+.banner-section .content-column.light-text {
+color: #ffffff;
+}
+
+/* Change the heading color to white when overlay is activated */
+.banner-section .content-column .h1-wrapper h1 {
+color: #ffffff;
+}
+
+/* Override the text color for the "Get the Your Business Needs!" part */
+.banner-section .content-column .h1-wrapper h1 .not-capital {
+color: #ffffff;
+}
+}
+
+/* Style for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+/* Deactivate the overlay */
+.banner-section .slide .image-overlay {
+display: none;
+}
+
+/* Change the text color to dark when overlay is deactivated */
+.banner-section .content-column.dark-text {
+color: #606060;
+}
+}
+
+/* Specific styles for the "Get the Your Business Needs!" part */
+.banner-section .content-column .h1-wrapper h1 .capital {
+color: #2C724F;
+}
+        }
+    </style>
 
 
 
-
-
-
-					</div>
-
-				</div>
-			</div>
-
-
-		</div>
-
-
-	</div>
-	<!-- End Banner Section -->
 
 	<!-- CTA Section Start -->
 	<div class="cta-section" data-bg-image="images/background/cta-bg.jpg">
@@ -381,7 +427,7 @@
 			<!-- Sec Title -->
 			<div class="sec-title">
 				<div class="title">testimonials</div>
-				<h2><span>+70 Clients </span>Love Us</h2>
+				<h2>Trusted by Over<span>+70 Clients </span>Clients</h2>
 			</div>
 			<div class="testimonial-carousel owl-carousel owl-theme">
 
@@ -509,7 +555,7 @@
 					<div class="inner-column">
 						<div class="sec-title">
 							<div class="title">why choose us</div>
-							<h2><span>Your Successful </span>Is<br> Our Reputation</h2>
+							<h2><span>Your Success </span>Is<br> Our Reputation</h2>
 						</div>
 						<div class="blocks-outer">
 
