@@ -159,7 +159,7 @@
                         <span style="display: block; font-size: 20px; color: #606060;">- Already Raised $8.1 Billion+ and Still Growing!</span>
                     </div>
                     <div class="btn-box">
-                        <a href="about.html" class="theme-btn btn-style-one"><span class="txt">Get Funded Now</span></a>
+                        <a href="#contact us" class="theme-btn btn-style-one"><span class="txt">Get Funded Now</span></a>
                     </div>
                 </div>
             </div>
@@ -206,54 +206,86 @@
 		</div>
 	</div>
 	<!-- CTA Section End -->
-
-
-
           <!-- About Section -->
-<div class="about-section">
-  <div class="auto-container">
-    <div class="inner-container">
-      <div class="row justify-content-evenly">
-        <!-- First Content Column -->
-        <div class="content-column col-lg-5 col-md-6 col-sm-12">
-          <div class="about-column">
-            <div class="sec-title">
-              <h2>Real Estate Investment Made Simple</h2>
-            </div>
-            <div class="text">
-              <p style="font-size: 16px">We specialize in real estate investments. Whether it's buying properties, building new ones, or improving existing spaces like offices and hotels, we know how to make smart choices to grow your investments.</p>
+          <div class="about-section">
+            <div class="auto-container">
+              <div class="inner-container flex-container">
+                <!-- First Image Column -->
+                <div class="image-column col-lg-5 col-md-6 col-sm-12">
+                  <!-- Placeholder Image -->
+                  <img src="images/about/home-about.png" alt="Image">
+                </div>
+
+                <!-- First Content Column -->
+                <div class="content-column col-lg-5 col-md-6 col-sm-12">
+                  <div class="about-column">
+                    <div class="sec-title">
+                      <h2>Real Estate Investment Done Right</h2>
+                    </div>
+                    <div class="text">
+                      <p style="font-size: 19px">We are experts in real estate investments. From buying properties to building new ones, and improving existing spaces like offices and hotels, we know how to make smart choices to grow your investments.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second Image Column -->
+                <div class="image-column col-lg-5 col-md-6 col-sm-12">
+                  <!-- Placeholder Image -->
+                  <img src="images/about/home-about 2.png" alt="Image">
+                </div>
+
+                <!-- Second Content Column -->
+                <div class="content-column col-lg-5 col-md-6 col-sm-12">
+                  <div class="about-column">
+                    <div class="sec-title">
+                      <h2>Grow Your Business with Us!</h2>
+                    </div>
+                    <div class="text">
+                      <p style="font-size: 19px">NDM Capital is here to help you find business opportunities. We are experts in mergers and acquisitions (M&A), and can assist your business with buying and selling for success. Our team will find the best partners for you, making everyone happy.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CSS inside HTML -->
+                <style>
+                  @media (min-width: 992px) {
+                    .flex-container {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center; /* Added to horizontally center the items */
+                      padding: 20px; /* Added padding */
+                    }
+                    .flex-container > div {
+                      width: 50%;
+                    }
+                    .content-column:nth-child(2),
+                    .image-column:nth-child(4) {
+                      order: -1;
+                    }
+                  }
+
+                  @media (max-width: 991px) {
+                    .flex-container {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      padding: 0; /* Added padding */
+                    }
+                    .flex-container > div {
+                      width: 65%;
+                    }
+                    .image-column,
+                    .content-column {
+                      order: unset;
+                    }
+                  }
+                </style>
+
+              </div>
             </div>
           </div>
-        </div>
+          <!-- End About Section -->
 
-        <!-- First Image Column -->
-        <div class="image-column col-lg-5 col-md-6 col-sm-12">
-          <!-- Placeholder Image -->
-          <img src="images/about/home-about.png" alt="Image">
-        </div>
-      </div>
-      <div class="row justify-content-evenly">
-        <!-- Second Image Column (Now Comes First) -->
-        <div class="image-column col-lg-5 col-md-6 col-sm-12">
-          <!-- Placeholder Image -->
-          <img src="images/about/home-about.png" alt="Image">
-        </div>
-
-        <!-- Second Content Column (Now Comes Second) -->
-        <div class="content-column col-lg-5 col-md-6 col-sm-12">
-          <div class="about-column">
-            <div class="sec-title">
-              <h2>Make Big Deals with Us!</h2>
-            </div>
-            <div class="text">
-              <p style="font-size: 16px">Looking for business opportunities? NDM Capital is here to help! We're experts in mergers and acquisitions (M&A), assisting businesses to buy and sell for success. Our smart team finds the best partners, making everyone happy.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- End About Section -->
 
 
@@ -271,35 +303,13 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-blackboard"></span>
-							</div>
-							<h5><a href="service-detail.html">Strategy</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
 								<span class="icon ti-stats-up"></span>
 							</div>
-							<h5><a href="service-detail.html">Financial</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
+							<h5><a href="service-detail.html">Capital Raise</a></h5>
+							<div class="text">Debt and equity capital raises from $10 million to $600 million.
+Minority equity, control equity, and equity growth capital.
+Raising debt from senior secured to unsecured facilities.</div>
 
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-shield"></span>
-							</div>
-							<h5><a href="service-detail.html">Insurance</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 
@@ -309,9 +319,35 @@
 							<div class="icon-box">
 								<span class="icon ti-home"></span>
 							</div>
-							<h5><a href="service-detail.html">Estate</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<h5><a href="service-detail.html">Real Estate Focus</a></h5>
+							<div class="text">Supporting real estate transactions in various sectors, including office, storage, hotel & hospitality, retail properties & shopping centers, multifamily properties, mobile home, workforce housing, industrial & manufacturing, and general real estate development projects.
+Programmatic JV Equity facilities and mezzanine and debt facilities as needed.</div>
+
+						</div>
+					</div>
+
+					<!-- Service Block -->
+					<div class="service-block col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="icon-box">
+								<span class="icon ti-blackboard"></span>
+							</div>
+							<h5><a href="service-detail.html">M&A Advisory</a></h5>
+							<div class="text">Expert financial advisory and M&A expertise for buy-side and sell-side transactions.
+Guiding clients through the entire transaction process, from evaluating alternatives to negotiating final terms.</div>
+
+						</div>
+					</div>
+
+					<!-- Service Block -->
+					<div class="service-block col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="icon-box">
+								<span class="icon ti-shield"></span>
+							</div>
+							<h5><a href="service-detail.html">Specialty Finance</a></h5>
+							<div class="text">Specialized services for North American companies in various finance sectors, such as asset-based lending, factors, purchase order finance, equipment leasing, trade finance, bridge lending, consumer finance, and financial technology.</div>
+
 						</div>
 					</div>
 
@@ -321,9 +357,9 @@
 							<div class="icon-box">
 								<span class="icon ti-stamp"></span>
 							</div>
-							<h5><a href="service-detail.html">Audit & Evaluation</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<h5><a href="service-detail.html">Private Placement</a></h5>
+							<div class="text">Comprehensive transaction management, including capital structure assessment, introducing strategic private partnerships, and securing financing and/or capital from a range of sources.</div>
+
 						</div>
 					</div>
 
@@ -333,33 +369,10 @@
 							<div class="icon-box">
 								<span class="icon ti-money"></span>
 							</div>
-							<h5><a href="service-detail.html">Taxes & Efficiency</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
+							<h5><a href="service-detail.html">Transaction Management</a></h5>
+							<div class="text">Utilizing a vast network of bank and alternative lenders, credit funds, family offices, institutional investors, private equity, offshore relationships, and strategic and financial buyers and sellers.
+Proven success in various industries, from real estate and specialty finance to healthcare, technology, entertainment, aerospace, and environmental sustainable & governance (ESG).</div>
 
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-shopping-cart-full"></span>
-							</div>
-							<h5><a href="service-detail.html">Consumer Market</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-truck"></span>
-							</div>
-							<h5><a href="service-detail.html">Logistic</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 
@@ -379,46 +392,42 @@
 			<!-- Sec Title -->
 			<div class="sec-title">
 				<div class="title">testimonials</div>
-				<h2><span>+2,500 Clients </span>Love Us</h2>
+				<h2><span>+70 Clients </span>Love Us</h2>
 			</div>
 			<div class="testimonial-carousel owl-carousel owl-theme">
 
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Ryan Betthalyn <span>/ Director at Chobham Manor</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Bobs Hanley <span>/ Director at Spotify</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Ryan Betthalyn <span>/ Director at Chobham Manor</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Bobs Hanley <span>/ Director at Spotify</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-
+        <!-- Testimonial Block -->
+  <div class="testimonial-block">
+    <div class="inner-box">
+      <div class="quote icofont-quote-right"></div>
+      <div class="author">Mark Thompson <span>/ CEO, Tech Solutions Inc.</span></div>
+      <div class="text">Working with NDM Capital was a fantastic experience. Their team's expertise in debt and equity capital raises helped us secure the funding needed to expand our tech company.</div>
+    </div>
+  </div>
+  <!-- Testimonial Block -->
+  <div class="testimonial-block">
+    <div class="inner-box">
+      <div class="quote icofont-quote-right"></div>
+      <div class="author">Emily Rodriguez <span>/ Real Estate Investor</span></div>
+      <div class="text">NDM Capital's Real Estate Investment Banking Team delivered outstanding results for my property portfolio. Their programmatic JV Equity facilities were a game-changer for my real estate ventures.</div>
+    </div>
+  </div>
+  <!-- Testimonial Block -->
+  <div class="testimonial-block">
+    <div class="inner-box">
+      <div class="quote icofont-quote-right"></div>
+      <div class="author">Robert Johnson <span>/ CFO, Global Manufacturing Corp.</span></div>
+      <div class="text">NDM Capital's specialty finance services enabled us to seize growth opportunities with confidence. Their tailored financing solutions played a pivotal role in our company's success.</div>
+    </div>
+  </div>
+  <!-- Testimonial Block -->
+  <div class="testimonial-block">
+    <div class="inner-box">
+      <div class="quote icofont-quote-right"></div>
+      <div class="author">Jennifer Lee <span>/ Managing Partner, Strategic Ventures LLC</span></div>
+      <div class="text">I highly recommend NDM Capital for M&A advisory services. Their team's professionalism and strategic insights led to a seamless and successful acquisition for our firm.</div>
+    </div>
+  </div>
 			</div>
 		</div>
 	</div>
@@ -452,7 +461,7 @@
 			<div class="row clearfix">
 
 				<!-- Form Column -->
-				<div class="form-column col-lg-5 col-md-12 col-sm-12">
+				<div id="contact form" class="form-column col-lg-5 col-md-12 col-sm-12">
 					<div class="inner-column">
 						<div class="form-boxed">
 							<h5>free consulation</h5>
@@ -475,10 +484,17 @@
 										<label>topics</label>
 										<select class="custom-select-box">
 											<option>Choose topic</option>
-											<option>Topic 01</option>
-											<option>Topic 02</option>
-											<option>Topic 03</option>
-											<option>Topic 04</option>
+                      <option>Capital Raise Inquiry</option>
+                      <option>Real Estate Investment Consultation</option>
+                      <option>Specialty Finance Solutions</option>
+                      <option>M&A Advisory Services</option>
+                      <option>Private Placement Assistance</option>
+                      <option>Transaction Management Support</option>
+                      <option>General Business Consultation</option>
+                      <option>Equity and Debt Financing Options</option>
+                      <option>Corporate Restructuring Advice</option>
+                      <option>Other</option>
+
 										</select>
 									</div>
 									<!--Form Group-->
@@ -487,7 +503,7 @@
 										<textarea name="message" placeholder="Write your message here"></textarea>
 									</div>
 									<div class="form-group">
-										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenger</span></button>
+										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenge</span></button>
 									</div>
 								</form>
 
@@ -506,29 +522,27 @@
 						</div>
 						<div class="blocks-outer">
 
-							<!-- Reputation Block -->
-							<div class="reputation-block">
-								<div class="inner-box">
-									<h5>Strong Martket Analysis</h5>
-									<div class="text">Tasks, docs, and files integrate with Arado’s chat to close the <br> gaps between feedback and action.</div>
-								</div>
-							</div>
-
-							<!-- Reputation Block -->
-							<div class="reputation-block">
-								<div class="inner-box">
-									<h5>Experience & Percision</h5>
-									<div class="text">Create multiple discussions to keep all relevant conversations <br> together, all in one place with Arado</div>
-								</div>
-							</div>
-
-							<!-- Reputation Block -->
-							<div class="reputation-block">
-								<div class="inner-box">
-									<h5>Experts About Business</h5>
-									<div class="text">Create multiple discussions to keep all relevant conversations <br> together, all in one place with Arado</div>
-								</div>
-							</div>
+              <!-- Reputation Block -->
+              <div class="reputation-block">
+                <div class="inner-box">
+                  <h5>Experience & Expertise</h5>
+                  <div class="text">Benefit from our seasoned team's precise execution and wealth of experience in offshore capital raises.</div>
+                </div>
+              </div>
+              <!-- Reputation Block -->
+              <div class="reputation-block">
+                <div class="inner-box">
+                  <h5>Dedicated to Your Success</h5>
+                  <div class="text">With a focus on your growth, we are committed to delivering tailored solutions to meet your unique needs.</div>
+                </div>
+              </div>
+              <!-- Reputation Block -->
+              <div class="reputation-block">
+                <div class="inner-box">
+                  <h5>Trusted Business Advisors</h5>
+                  <div class="text">Partner with us to access expert advice and guidance throughout the entire capital raise process.</div>
+                </div>
+              </div>
 
 						</div>
 					</div>
@@ -540,55 +554,50 @@
 	<!-- End Reputation Section -->
 
 	<!-- Experts Section -->
-	<div class="experts-section">
-		<div class="auto-container">
 
 			<!-- Sec Title -->
-			<div class="sec-title">
-				<div class="clearfix">
-					<div class="pull-left">
-					</div>
-          <!-- About Section -->
-          <div class="about-section">
-            <div class="auto-container">
-              <div class="inner-container d-flex justify-content-between">
+      <!-- About Section -->
+<div class="about-section">
+  <div class="auto-container">
+    <div class="inner-container d-md-flex flex-md-row-reverse justify-content-center align-items-center">
 
-                <!-- Team Block -->
-                <div class="team-block col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="image">
-                      <a href="#"><img src="images/resource/team-1.jpg" alt="" /></a>
-                      <!-- Social Box -->
-                      <ul class="social-box">
-                        <li><a href="https://www.linkedin.com/company/ndmcapitalllc/" class="icofont-linkedin"></a></li>
-                        <li><a href="https://www.facebook.com/p/NDM-Capital-LLC-100068714173350/?paipv=0&eav=AfaShM3sOavN42AuEuQx-e9iMUQPOoq_W3GtpLmHI3f-779OTaUBwI3zQDbWY0A8KCg&_rdr" class="icofont-facebook"></a></li>
-                      </ul>
-                    </div>
-                    <div class="lower-box mt-0">
-                      <h4><a href="#">Na'im Muhammad</a></h4>
-                      <div class="designation">Founder & CEO</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Content Column -->
-                <div class="content-column col-lg-7 col-md-12 col-12">
-                  <div class="about-column">
-                    <div class="sec-title">
-                      <h2>Founder's <span>Note</span></h2>
-                    </div>
-                    <div class="text">
-                      <p style="font-size: 16px">At NDM Capital, we help businesses like yours grow! As an offshore capital raise firm, we join forces with creative entrepreneurs and innovative companies. Our experienced team has raised over $8.1 billion for 400+ ventures, and we're ready to do the same for you!</p>
-                      <p style="font-size: 16px">Our goal is simple - to make your dreams come true! NDM Capital specializes in debt and equity capital raises, offering personalized solutions from $10 million to $600 million. We understand your unique needs and will guide you every step of the way towards success.</p>
-                    </div>
-                    <div class="signature">Na'im Muhammad<br><br></div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
+      <!-- Team Block -->
+      <div class="team-block col-lg-4 col-md-6 col-sm-6 col-12 order-md-2">
+        <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+          <div class="image" style="width: 300px; height: 300px; overflow: hidden; border-radius: 50%;">
+            <a href="#"><img src="images/resource/team-1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+            <!-- Social Box -->
+            <ul class="social-box">
+              <li><a href="https://www.linkedin.com/company/ndmcapitalllc/" class="icofont-linkedin"></a></li>
+              <li><a href="https://www.facebook.com/p/NDM-Capital-LLC-100068714173350/?paipv=0&eav=AfaShM3sOavN42AuEuQx-e9iMUQPOoq_W3GtpLmHI3f-779OTaUBwI3zQDbWY0A8KCg&_rdr" class="icofont-facebook"></a></li>
+            </ul>
           </div>
-          <!-- End About Section -->
+          <div class="lower-box mt-0">
+            <h4><a href="#">Na'im Muhammad</a></h4>
+            <div class="designation">Founder & CEO</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="content-column col-md-6 order-md-1">
+        <div class="about-column">
+          <div class="sec-title">
+            <h2>Founder's <span>Note</span></h2>
+          </div>
+          <div class="text">
+            <p style="font-size: 16px">At NDM Capital, we help businesses like yours grow! As an offshore capital raise firm, we join forces with creative entrepreneurs and innovative companies. Our experienced team has raised over $8.1 billion for 400+ ventures, and we're ready to do the same for you!</p>
+            <p style="font-size: 16px">Our goal is simple - to make your dreams come true! NDM Capital specializes in debt and equity capital raises, offering personalized solutions from $10 million to $600 million. We understand your unique needs and will guide you every step of the way towards success.</p>
+          </div>
+          <div class="signature">Na'im Muhammad<br><br></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End About Section -->
+
 
 
   <!-- Experts Section -->
@@ -600,7 +609,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.591390941511!2d-88.0322115!3d42.0519416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faf8d5a85c343%3A0x39819f6d03c940c8!2s1900%20E%20Golf%20Rd%2C%20Schaumburg%2C%20IL%2060173!5e0!3m2!1sen!2sus!4v1690619510599!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.3150609575905!2d-87.6235655!3d41.886080899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca8b34afe61%3A0x6caeb5f721ca846!2s205%20N%20Michigan%20Ave%20Suit%20810%2C%20Chicago%2C%20IL%2060601!5e0!3m2!1sen!2sus!4v1690692536587!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->
@@ -623,8 +632,12 @@
 										<a href="index.html"><img src="images/logo.png" alt="" /></a>
 									</div>
 									<div class="call">
-										Call us directly
-										<a class="phone" href="tel:+1 (877) 636-2733">+1 (877) 636-2733</a>
+										<br>Call us directly<br><br>Toll Free
+										<a class="phone" href="tel:+1877.636.2733">+1 (877) 636-2733</a>
+                    <br>Telephone
+                    	<a class="phone" href="tel:+1 (312) 971-2163">+1 (312) 971-2163</a>
+                      <br>
+                      Email
 										<a class="email" href="mailto:hello@consulte.co">hello@consulte.co</a>
 									</div>
 								</div>
@@ -633,10 +646,7 @@
 							<!-- Footer Column -->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-									<h5>Company</h5>
-									<ul class="list-link">
-										<li><a href="contact.html">Contact Us</a></li>
-									</ul>
+									<h5><a href="contact.html">Contact Us</a></h5>
 								</div>
 							</div>
 
@@ -678,7 +688,7 @@
 							<div class="col-lg-4 col-md-12 col-sm-12">
 								<ul class="social-nav">
                   <li><a href="https://www.linkedin.com/company/ndmcapitalllc/" class="icofont-linkedin"></a></li>
-                  <li><a href="https://www.facebook.com/p/NDM-Capital-LLC-100068714173350/?paipv=0&eav=AfaShM3sOavN42AuEuQx-e9iMUQPOoq_W3GtpLmHI3f-779OTaUBwI3zQDbWY0A8KCg&_rdr" class="icofont-facebook"></a></li>
+                  <li><a href="https://www.facebook.com/p/NDM-Capital-LLC-100068714173350/?paipv=0&eav=AfaShM3sOavN42AuEuQx-e9iMUQPOoq_W3GtpLmHI3f-779OTaUBwI3zQDbWY0A8KCg&_rdr"  class="icofont-facebook"></a></li>
 								</ul>
 							</div>
 
@@ -724,6 +734,27 @@
 <script src="js/jquery.paroller.min.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+  // Smooth scrolling effect for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Get the target section based on the href attribute of the link
+      const targetSection = document.querySelector(this.getAttribute('href'));
+
+      // Calculate the scroll position to the target section
+      const offsetTop = targetSection.getBoundingClientRect().top;
+
+      // Scroll smoothly to the target section
+      window.scrollBy({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
