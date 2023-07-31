@@ -157,12 +157,12 @@
                                     </h1>
                                 </div>
                                 <div class="text" style="margin-bottom: 40px;">
-                                    <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;" class="light-text not-capital">Innovative Solutions for Debt & Equity</span>
-                                    <span style="display: block; margin-bottom: 5px; font-size: 20px; color: #606060;" class="light-text not-capital">Capital Raises: $10M to $600M</span>
-                                    <span style="display: block; font-size: 20px; color: #606060;" class="light-text not-capital">Raised $8.1B+ & Still Growing!</span>
+                                    <span style="display: block; margin-bottom: 5px; font-size: 20px;" class="light-text not-capital">Innovative Solutions for Debt & Equity</span>
+                                    <span style="display: block; margin-bottom: 5px; font-size: 20px;" class="light-text not-capital">Capital Raises: $10M to $600M</span>
+                                    <span style="display: block; font-size: 20px;" class="light-text not-capital">Raised $8.1B+ & Still Growing!</span>
                                 </div>
                                 <div class="btn-box">
-                                    <a href="#contactus" class="theme-btn btn-style-one"><span class="txt">Get Funded Now</span></a>
+                                    <a  href="#contactus" class="theme-btn btn-style-one"><span style="color: #fff;" class="txt">Get Funded Now</span></a>
                                 </div>
                             </div>
                         </div>
@@ -177,51 +177,61 @@
     <style>
     /* Style for mobile screens (max-width: 767px) */
 @media (max-width: 767px) {
-/* Apply black background with low opacity to the overlay */
-.banner-section .slide .image-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.7);
-z-index: 1;
-}
+  /* Apply black background with low opacity to the overlay */
+  .banner-section .slide .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
 
-/* Change the text color to white when overlay is activated */
-.banner-section .content-column.light-text {
-color: #ffffff;
-}
+  /* Change the text color to white when overlay is activated */
+  .banner-section .content-column *,
 
-/* Change the heading color to white when overlay is activated */
-.banner-section .content-column .h1-wrapper h1 {
-color: #ffffff;
-}
+  .banner-section .content-column.light-text {
+    color: #ffffff;
+  }
 
-/* Override the text color for the "Get the Your Business Needs!" part */
-.banner-section .content-column .h1-wrapper h1 .not-capital {
-color: #ffffff;
-}
+  /* Change the heading color to white when overlay is activated */
+  .banner-section .content-column *,
+  .banner-section .content-column.light-text,
+  .banner-section .content-column .h1-wrapper h1 {
+    color: #ffffff;
+  }
+
+  /* Override the text color for the "Get the Your Business Needs!" part */
+  .banner-section .content-column .h1-wrapper h1 .not-capital {
+    color: #ffffff;
+  }
 }
 
 /* Style for larger screens (min-width: 768px) */
 @media (min-width: 768px) {
-/* Deactivate the overlay */
-.banner-section .slide .image-overlay {
-display: none;
-}
+  /* Deactivate the overlay */
+  .banner-section .slide .image-overlay {
+    display: none;
+  }
 
-/* Change the text color to dark when overlay is deactivated */
-.banner-section .content-column.dark-text {
-color: #606060;
-}
+  /* Change the text color to dark when overlay is deactivated */
+  .banner-section .content-column *,
+  .banner-section .content-column.dark-text {
+    color: #606060;
+  }
 }
 
 /* Specific styles for the "Get the Your Business Needs!" part */
 .banner-section .content-column .h1-wrapper h1 .capital {
-color: #2C724F;
+  color: #2C724F;
 }
-        }
+
+/* Additional CSS to make the text color change on hover */
+.banner-section .content-column.dark-text:hover {
+  color: #ffffff;
+}
+
     </style>
 
 
@@ -495,60 +505,53 @@ color: #2C724F;
 		<div class="auto-container">
 			<div class="row clearfix">
 
-				<!-- Form Column -->
-				<div id="contactus" class="form-column col-lg-5 col-md-12 col-sm-12">
-					<div class="inner-column">
-						<div class="form-boxed">
-							<h5>Claim Your Free Consultation Now!
-
-</h5>
-
-							<div class="consult-form">
-								<form method="post" action="donate.html">
-
-									<!--Form Group-->
-									<div class="form-group">
-										<label>full name</label>
-										<input type="text" name="name" value="" placeholder="Jason Staham" required>
-									</div>
-									<!--Form Group-->
-									<div class="form-group">
-										<label>phone number</label>
-										<input type="text" name="phone" value="" placeholder="Enter your phone number" required>
-									</div>
-									<!--Form Group-->
-									<div class="form-group">
-										<label>topics</label>
-										<select class="custom-select-box">
-											<option>Choose topic</option>
-                      <option>Capital Raise Inquiry</option>
-                      <option>Real Estate Investment Consultation</option>
-                      <option>Specialty Finance Solutions</option>
-                      <option>M&A Advisory Services</option>
-                      <option>Private Placement Assistance</option>
-                      <option>Transaction Management Support</option>
-                      <option>General Business Consultation</option>
-                      <option>Equity and Debt Financing Options</option>
-                      <option>Corporate Restructuring Advice</option>
-                      <option>Other</option>
-
-										</select>
-									</div>
-									<!--Form Group-->
-									<div class="form-group">
-										<label>message</label>
-										<textarea name="message" placeholder="Write your message here"></textarea>
-									</div>
-									<div class="form-group">
-										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenge</span></button>
-									</div>
-								</form>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
+        <!-- Form Column -->
+  <div class="form-column col-lg-5 col-md-12 col-sm-12">
+      <div class="inner-column">
+          <div class="form-boxed">
+              <h5>Claim Your Free Consultation Now!</h5>
+              <div class="consult-form">
+                  <form method="post" action="mail.php" id="contactus">
+                      <!--Form Group-->
+                      <div class="form-group">
+                          <label>Full Name</label>
+                          <input type="text" name="name" value="" placeholder="Jason Statham" required>
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group">
+                          <label>Phone Number</label>
+                          <input type="text" name="phone" value="" placeholder="Enter your phone number" required>
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group">
+                          <label>Topic</label>
+                          <select class="custom-select-box" name="topic">
+                              <option>Choose topic</option>
+                              <option>Capital Raise Inquiry</option>
+                              <option>Real Estate Investment Consultation</option>
+                              <option>Specialty Finance Solutions</option>
+                              <option>M&A Advisory Services</option>
+                              <option>Private Placement Assistance</option>
+                              <option>Transaction Management Support</option>
+                              <option>General Business Consultation</option>
+                              <option>Equity and Debt Financing Options</option>
+                              <option>Corporate Restructuring Advice</option>
+                              <option>Other</option>
+                          </select>
+                      </div>
+                      <!--Form Group-->
+                      <div class="form-group">
+                          <label>Message</label>
+                          <textarea name="message" placeholder="Write your message here"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Send Your Message</span></button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
 
 				<!-- Content Column -->
 				<div class="content-column col-lg-7 col-md-12 col-sm-12">
@@ -787,8 +790,6 @@ color: #2C724F;
     });
   });
 </script>
-
-
 
 </body>
 </html>
