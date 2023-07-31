@@ -437,7 +437,7 @@
 			<!-- Sec Title -->
 			<div class="sec-title">
 				<div class="title">testimonials</div>
-				<h2>Trusted by Over<span>+70 Clients </span>Clients</h2>
+				<h2>Trusted by Over<span> +70 Clients </span>Clients</h2>
 			</div>
 			<div class="testimonial-carousel owl-carousel owl-theme">
 
@@ -506,12 +506,12 @@
 			<div class="row clearfix">
 
         <!-- Form Column -->
-    <div class="form-column col-lg-5 col-md-12 col-sm-12">
+    <div id="contactus" class="form-column col-lg-5 col-md-12 col-sm-12">
       <div class="inner-column">
         <div class="form-boxed">
           <h5>Claim Your Free Consultation Now!</h5>
           <div class="consult-form">
-            <form data-netlify="true" data-netlify-honeypot="bot-field" method="post">
+            <form data-netlify="true" method="post">
               <!--Form Group-->
               <div class="form-group">
                 <label>Full Name</label>
@@ -544,10 +544,7 @@
                 <label>Message</label>
                 <textarea name="message" placeholder="Write your message here" required></textarea>
               </div>
-              <!-- Netlify Honeypot Field -->
-              <p class="hidden">
-                <label>Don't fill this out if you're human: <input name="bot-field"></label>
-              </p>
+
               <div class="form-group">
                 <button class="theme-btn btn-style-one" type="submit" name="submit-form">
                   <span class="txt">Send Your Message</span>
@@ -787,7 +784,7 @@
 
       // Calculate the scroll position to the target section with a dynamic offset
       const windowHeight = window.innerHeight;
-      const offsetTop = targetSection.getBoundingClientRect().top + 450 - (windowHeight - 100);
+      const offsetTop = targetSection.getBoundingClientRect().top + 430 - (windowHeight - 100);
 
       // Scroll smoothly to the target section
       window.scrollBy({
