@@ -506,56 +506,58 @@
 			<div class="row clearfix">
 
         <!-- Form Column -->
-<div class="form-column col-lg-5 col-md-12 col-sm-12">
-  <div class="inner-column">
-    <div class="form-boxed">
-      <h5>Claim Your Free Consultation Now!</h5>
-      <div class="consult-form">
-        <form data-netlify="true" data-netlify-honeypot="bot-field" method="post" id="contactus">
-          <!--Form Group-->
-          <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" name="name" placeholder="Jason Statham" required>
+    <div class="form-column col-lg-5 col-md-12 col-sm-12">
+      <div class="inner-column">
+        <div class="form-boxed">
+          <h5>Claim Your Free Consultation Now!</h5>
+          <div class="consult-form">
+            <form data-netlify="true" data-netlify-honeypot="bot-field" method="post">
+              <!--Form Group-->
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Jason Statham" required>
+              </div>
+              <!--Form Group-->
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="phone" placeholder="Enter your phone number" required>
+              </div>
+              <!--Form Group-->
+              <div class="form-group">
+                <label>Topic</label>
+                <select class="custom-select-box" name="topic" required>
+                  <option value="">Choose topic</option>
+                  <option value="Capital Raise Inquiry">Capital Raise Inquiry</option>
+                  <option value="Real Estate Investment Consultation">Real Estate Investment Consultation</option>
+                  <option value="Specialty Finance Solutions">Specialty Finance Solutions</option>
+                  <option value="M&A Advisory Services">M&A Advisory Services</option>
+                  <option value="Private Placement Assistance">Private Placement Assistance</option>
+                  <option value="Transaction Management Support">Transaction Management Support</option>
+                  <option value="General Business Consultation">General Business Consultation</option>
+                  <option value="Equity and Debt Financing Options">Equity and Debt Financing Options</option>
+                  <option value="Corporate Restructuring Advice">Corporate Restructuring Advice</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <!--Form Group-->
+              <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" placeholder="Write your message here" required></textarea>
+              </div>
+              <!-- Netlify Honeypot Field -->
+              <p class="hidden">
+                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+              </p>
+              <div class="form-group">
+                <button class="theme-btn btn-style-one" type="submit" name="submit-form">
+                  <span class="txt">Send Your Message</span>
+                </button>
+              </div>
+            </form>
           </div>
-          <!--Form Group-->
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="text" name="phone" placeholder="Enter your phone number" required>
-          </div>
-          <!--Form Group-->
-          <div class="form-group">
-            <label>Topic</label>
-            <select class="custom-select-box" name="topic" required>
-              <option value="">Choose topic</option>
-              <option value="Capital Raise Inquiry">Capital Raise Inquiry</option>
-              <option value="Real Estate Investment Consultation">Real Estate Investment Consultation</option>
-              <option value="Specialty Finance Solutions">Specialty Finance Solutions</option>
-              <option value="M&A Advisory Services">M&A Advisory Services</option>
-              <option value="Private Placement Assistance">Private Placement Assistance</option>
-              <option value="Transaction Management Support">Transaction Management Support</option>
-              <option value="General Business Consultation">General Business Consultation</option>
-              <option value="Equity and Debt Financing Options">Equity and Debt Financing Options</option>
-              <option value="Corporate Restructuring Advice">Corporate Restructuring Advice</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <!--Form Group-->
-          <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" placeholder="Write your message here" required></textarea>
-          </div>
-          <!-- Netlify Honeypot Field -->
-          <p class="hidden">
-            <label>Don't fill this out if you're human: <input name="bot-field"></label>
-          </p>
-          <div class="form-group">
-            <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Send Your Message</span></button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
 				<!-- Content Column -->
