@@ -1882,7 +1882,8 @@ img{
 }
 
 .banner-section .slide{
-	position:relative;
+  position: relative;
+  margin-top: calc(-15vh + 60px); /* Adjust the values as needed */
 	overflow:hidden;
 	height: 1000px;
 	padding-top:160px;
