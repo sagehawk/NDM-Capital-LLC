@@ -1888,7 +1888,6 @@ img{
 
 .banner-section .slide{
   position: relative;
-	margin-left: calc(5%);
   margin-top: calc(-2em); /* Adjust the values as needed */
 	overflow:hidden;
 	height: 1000px;
@@ -1898,6 +1897,7 @@ img{
 	display: flex;
 	align-items: center;
 }
+
 @media only screen and (min-width: 1199px) {
   .banner-section .slide {
   margin-top: -10em;
