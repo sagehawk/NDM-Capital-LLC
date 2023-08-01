@@ -1888,7 +1888,7 @@ img{
 
 .banner-section .slide{
   position: relative;
-  margin-top: calc(-15vh + 60px); /* Adjust the values as needed */
+  margin-top: calc(-2em); /* Adjust the values as needed */
 	overflow:hidden;
 	height: 1000px;
 	padding-top:160px;
@@ -1897,7 +1897,11 @@ img{
 	display: flex;
 	align-items: center;
 }
-
+@media only screen and (min-width: 1200px) {
+  .banner-section .slide {
+  /*-margin-top: -7em;*/
+  }
+}
 .banner-section .content-column{
 	position:relative;
 }
