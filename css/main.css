@@ -1907,13 +1907,14 @@ img{
 @media only screen and (min-width: 1499px) {
   .banner-section .slide {
   margin-top: -15em;
-	margin-left: 15%;
+	margin-left: -10%;
 
 
   }
 }
 .banner-section .content-column{
-	position:relative;
+	margin-left: calc(5%);
+position:relative;
 }
 
 .banner-section .content-column .inner-column{
