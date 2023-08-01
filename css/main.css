@@ -1330,6 +1330,11 @@ img{
 	text-align:left;
 }
 
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
 .mobile-menu .nav-logo img{
 	max-width:200px;
 }
