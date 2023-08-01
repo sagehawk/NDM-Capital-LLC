@@ -191,8 +191,7 @@ p{
 
 .auto-container{
 	position:static;
-	max-width:1200px;
-	padding:0px 15px;
+
 	margin:0 auto;
 }
 
@@ -1888,6 +1887,7 @@ img{
 
 .banner-section .slide{
   position: relative;
+	margin-left: calc(5%);
   margin-top: calc(-2em); /* Adjust the values as needed */
 	overflow:hidden;
 	height: 1000px;
@@ -1897,9 +1897,18 @@ img{
 	display: flex;
 	align-items: center;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1199px) {
   .banner-section .slide {
-  /*-margin-top: -7em;*/
+  margin-top: -10em;
+
+  }
+}
+@media only screen and (min-width: 1499px) {
+  .banner-section .slide {
+  margin-top: -15em;
+	margin-left: 15%;
+
+
   }
 }
 .banner-section .content-column{
@@ -2256,7 +2265,8 @@ img{
 }
 
 .about-section .content-column .signature{
-	position:relative;
+	position:relative
+
 	font-size:30px;
 	font-weight: 400;
 	font-family: 'Sacramento', cursive;
