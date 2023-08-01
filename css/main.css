@@ -191,7 +191,8 @@ p{
 
 .auto-container{
 	position:static;
-
+	max-width:1200px;
+	padding:0px 15px;
 	margin:0 auto;
 }
 
@@ -690,7 +691,7 @@ img{
 
 .main-header .main-box{
 	position:relative;
-	padding:0px 0px;
+	padding:0px 15px;
 	left:0px;
 	top:0px;
 	width:100%;
@@ -1382,7 +1383,7 @@ img{
 	max-height: 100%;
 	overflow-y: auto;
 	background: #ffffff;
-	padding: 0px 0px;
+	padding: 0px 10px;
 	z-index: 5;
 	opacity: 0;
 	visibility: hidden;
